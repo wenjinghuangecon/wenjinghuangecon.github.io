@@ -88,9 +88,8 @@ a:hover {
   aspect-ratio: 1 / 1;    /* 强制正方形 */
   object-fit: cover;      /* 不变形，居中裁切 */
   object-position:center 20%
-  border-radius: 50%;     /* 圆形；想要方角改成 8px */
+  border-radius: 6px;     /* 圆形；想要方角改成 8px */
   display: block;
-  margin: 0 0 16px 0;
   border: 1px solid #ededed;
 }
 

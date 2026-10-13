@@ -9,138 +9,139 @@
 </head>
 <body>
 
-  <main class="container">
+  <!-- ============ 顶部导航栏 ============ -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="nav-brand">Wenjing Huang</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="assets/pdf/CV.pdf">CV</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- ============ 头部：照片 / 姓名 / 机构 / 联系方式 ============ -->
-    <header class="header">
-      <!-- 替换照片：把你的照片存成 assets/images/photo.jpg 即可（建议正方形，600x600 以上） -->
+  <div class="layout">
+
+    <!-- ============ 左侧栏：照片 / 姓名 / 机构 / 联系方式 ============ -->
+    <aside class="sidebar">
+      <!-- 换成你的照片：assets/images/photo.jpg（正方形最佳） -->
       <img class="avatar" src="assets/images/photo.jpg" alt="Wenjing Huang">
 
       <h1 class="name">Wenjing Huang</h1>
 
-      <p class="affiliation">
-        Ph.D. Candidate in Economics<br>
-        Department of Economics<br>
-        The Chinese University of Hong Kong
-      </p>
+      <p class="affiliation">The Chinese University of Hong Kong</p>
+      <p class="location">Hong Kong SAR</p>
 
-      <p class="contact">
-        <strong>Email:</strong>
-        <a href="mailto:wenjinghuang@link.cuhk.edu.hk">wenjinghuang@link.cuhk.edu.hk</a>
-      </p>
-
-      <p class="contact">
-        <strong>CV:</strong>
-        <a href="assets/pdf/CV.pdf">Download PDF</a>
-        <!-- 把你的 CV 另存为 assets/pdf/CV.pdf -->
-      </p>
-    </header>
-
-    <!-- ============ About ============ -->
-    <section class="section">
-      <h2>About</h2>
-      <p>
-        I am a Ph.D. candidate in Economics at The Chinese University of Hong Kong,
-        expecting to complete my degree in 2027. My research lies at the intersection of
-        international trade and international finance, with a focus on China's overseas
-        lending, foreign aid, and the internationalization of the renminbi (RMB).
-      </p>
-    </section>
-
-    <!-- ============ Research Interests ============ -->
-    <section class="section">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>International Trade</li>
-        <li>International Finance</li>
-        <li>Chinese Foreign Aid and Overseas Lending</li>
-        <li>RMB Internationalization</li>
+      <ul class="links">
+        <li><a href="mailto:wenjinghuang@link.cuhk.edu.hk">Email</a></li>
+        <li><a href="assets/pdf/CV.pdf">CV</a></li>
+        <li><a href="https://github.com/wenjinghuangecon">GitHub</a></li>
+        <!-- 没有的链接直接删掉整行 -->
+        <!-- <li><a href="#">Google Scholar</a></li> -->
       </ul>
-    </section>
+    </aside>
 
-    <!-- ============ Job Market Paper ============ -->
-    <section class="section">
-      <h2>Job Market Paper</h2>
+    <!-- ============ 右侧主内容 ============ -->
+    <main class="content">
 
-      <div class="paper">
-        <p class="paper-title">
-          Lending Your Way to Currency Dominance: Chinese Overseas Lending and RMB Invoicing
+      <!-- ---------- About ---------- -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I am a Ph.D. candidate in Economics at The Chinese University of Hong Kong.
+          My research interests are International Trade and International Finance, with a
+          focus on China's overseas lending, foreign aid, and the internationalization of
+          the renminbi (RMB).
         </p>
-        <p class="paper-meta">
-          (with Shu Lin and Haichun Ye)
-          &nbsp;&nbsp;
-          <!-- 替换成你的真实链接；暂时没有可以先删掉这两行 -->
-          <a href="#">Paper</a> &middot; <a href="#">Slides</a>
+        <p>
+          I received my M.A. in Economics from Fudan University and my B.Sc. from Shanghai
+          University of Finance and Economics.
         </p>
-        <p class="abstract">
-          This paper examines whether Chinese overseas lending promotes RMB invoicing.
-          Combining loan-level data from AidData with bilateral trade data, we find that
-          greater Chinese loan-to-GDP exposure significantly strengthens RMB exchange-rate
-          pass-through into recipient countries' import prices and import volumes from China,
-          while weakening dollar pass-through. The effects are concentrated in loans extended by
-          Chinese policy banks, non-resource-backed loans, and infrastructure-related products.
-          These patterns are consistent with a procurement-tying mechanism: Chinese official
-          loans raise demand for related Chinese goods, which are more likely to be invoiced in
-          RMB. The results are robust to alternative explanations based on bilateral swap lines,
-          borrower financial distress, political alignment, and currency matching. Placebo tests
-          using World Bank loans and Japanese and U.S. official development assistance confirm
-          that the effects are unique to Chinese official lending.
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============ Publications ============ -->
-    <section class="section">
-      <h2>Publications</h2>
-      <div class="paper">
-        <p class="paper-title">
-          Trade Liberalization and Quality Adjustment within Firms
-        </p>
-        <p class="paper-meta">
-          <em>China Industrial Economics</em> (中国工业经济), 2022, 1: 93&ndash;112.
-          (with Haichao Fan and Caiyun Wu)
-        </p>
-      </div>
-    </section>
+      <!-- ---------- Research ---------- -->
+      <section id="research" class="section">
+        <h2>Research</h2>
 
-    <!-- ============ Working Papers ============ -->
-    <section class="section">
-      <h2>Working Papers</h2>
-      <div class="paper">
-        <p class="paper-title">
-          Helping Others is Helping Yourself: How Chinese Foreign Aid Promotes China's Exports
-        </p>
-        <p class="paper-meta">
-          (with Haichao Fan, Shu Lin, and Binchao Shen)
-        </p>
-      </div>
-    </section>
+        <h3 class="sub">Job Market Paper</h3>
+        <div class="paper">
+          <p class="paper-title">
+            Lending Your Way to Currency Dominance: Chinese Overseas Lending and RMB Invoicing
+          </p>
+          <p class="paper-meta">
+            (with Shu Lin and Haichun Ye)
+            &nbsp;&middot;&nbsp;
+            <!-- 换成真实链接；暂时没有就删掉这行 -->
+            <a href="#">Paper</a> &middot; <a href="#">Slides</a>
+          </p>
+          <p class="abstract">
+            This paper examines whether Chinese overseas lending promotes RMB invoicing.
+            Combining loan-level data from AidData with bilateral trade data, we find that
+            greater Chinese loan-to-GDP exposure significantly strengthens RMB exchange-rate
+            pass-through into recipient countries' import prices and import volumes from
+            China, while weakening dollar pass-through. The effects are concentrated in loans
+            extended by Chinese policy banks, non-resource-backed loans, and
+            infrastructure-related products. These patterns are consistent with a
+            procurement-tying mechanism: Chinese official loans raise demand for related
+            Chinese goods, which are more likely to be invoiced in RMB. The results are
+            robust to alternative explanations based on bilateral swap lines, borrower
+            financial distress, political alignment, and currency matching. Placebo tests
+            using World Bank loans and Japanese and U.S. official development assistance
+            confirm that the effects are unique to Chinese official lending.
+          </p>
+        </div>
 
-    <!-- ============ Teaching ============ -->
-    <section class="section">
-      <h2>Teaching</h2>
-      <p class="paper-meta"><strong>Teaching Assistant, Postgraduate Courses, CUHK</strong></p>
-      <ul>
-        <li>Financial Economics</li>
-        <li>Special Topics in Economics</li>
-        <li>Behavioral Economics and Finance</li>
-      </ul>
-      <p class="paper-meta"><strong>Teaching Assistant, Undergraduate Courses, CUHK</strong></p>
-      <ul>
-        <li>Money and Banking</li>
-        <li>Public Finance</li>
-      </ul>
-      <p class="paper-meta"><strong>Teaching Assistant, Exchange Programs, Fudan University</strong></p>
-      <ul>
-        <li>International Trade</li>
-      </ul>
-    </section>
+        <h3 class="sub">Working Papers</h3>
+        <div class="paper">
+          <p class="paper-title">
+            Helping Others is Helping Yourself: How Chinese Foreign Aid Promotes China's Exports
+          </p>
+          <p class="paper-meta">(with Haichao Fan, Shu Lin, and Binchao Shen)</p>
+        </div>
 
-    <footer class="footer">
-      <p>Last updated: October 2026</p>
-    </footer>
+        <h3 class="sub">Selected Publications</h3>
+        <div class="paper">
+          <p class="paper-title">
+            Trade Liberalization and Quality Adjustment within Firms
+          </p>
+          <p class="paper-meta">
+            <em>China Industrial Economics</em> (中国工业经济), 2022, 1: 93&ndash;112.
+            (with Haichao Fan and Caiyun Wu)
+          </p>
+        </div>
+      </section>
 
-  </main>
+      <!-- ---------- Teaching ---------- -->
+      <section id="teaching" class="section">
+        <h2>Teaching</h2>
+
+        <h3 class="sub">Postgraduate Courses, CUHK</h3>
+        <ul>
+          <li>Financial Economics</li>
+          <li>Special Topics in Economics</li>
+          <li>Behavioral Economics and Finance</li>
+        </ul>
+
+        <h3 class="sub">Undergraduate Courses, CUHK</h3>
+        <ul>
+          <li>Money and Banking</li>
+          <li>Public Finance</li>
+        </ul>
+
+        <h3 class="sub">Exchange Programs, Fudan University</h3>
+        <ul>
+          <li>International Trade</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>Last updated: October 2026</p>
+      </footer>
+
+    </main>
+  </div>
 
 </body>
 </html>

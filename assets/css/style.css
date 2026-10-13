@@ -1,4 +1,6 @@
-/* ---------- 全局 ---------- */
+/* ================= 全局 ================= */
+* { box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
@@ -11,46 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 56px 24px 40px 24px;
-}
-
-/* ---------- 头部 ---------- */
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 18px auto;
-  border: 1px solid #e2e2e2;
-}
-
-.name {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  margin: 0 0 10px 0;
-}
-
-.affiliation {
-  margin: 0 0 14px 0;
-  color: #444;
-}
-
-.contact {
-  margin: 2px 0;
-  color: #333;
-}
-
-/* ---------- 链接 ---------- */
 a {
   color: #1a4b8c;
   text-decoration: none;
@@ -59,20 +21,138 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- 板块 ---------- */
+/* ================= 顶部导航栏 ================= */
+.navbar {
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #444;
+  font-size: 14.5px;
+}
+.nav-links a:hover {
+  color: #1a4b8c;
+  text-decoration: none;
+}
+
+/* ================= 两栏布局 ================= */
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 32px 48px 32px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+/* ---------- 左栏（固定宽度） ---------- */
+.sidebar {
+  flex: 0 0 220px;        /* 左栏宽度，想更宽改这个 */
+  position: sticky;       /* 滚动时左栏吸顶不动 */
+  top: 24px;
+}
+
+.avatar {
+  width: 100%;            /* 跟随左栏宽度 */
+  max-width: 160px;
+  aspect-ratio: 1 / 1;    /* 强制正方形 */
+  object-fit: cover;      /* 不变形，居中裁切 */
+  border-radius: 50%;     /* 圆形；想要方角改成 8px */
+  display: block;
+  margin: 0 0 16px 0;
+  border: 1px solid #ededed;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.2px;
+}
+
+.affiliation {
+  margin: 0;
+  font-size: 14.5px;
+  color: #333;
+}
+
+.location {
+  margin: 0 0 14px 0;
+  font-size: 14.5px;
+  color: #888;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  font-size: 14.5px;
+}
+
+/* ---------- 右栏（占剩余宽度） ---------- */
+.content {
+  flex: 1 1 auto;
+  min-width: 0;           /* 防止长英文单词撑破布局 */
+}
+
+/* ================= 板块 ================= */
 .section {
-  margin-bottom: 32px;
+  margin-bottom: 38px;
+  scroll-margin-top: 24px;
 }
 
 .section h2 {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   color: #111;
-  margin: 0 0 14px 0;
+  margin: 0 0 16px 0;
   padding-bottom: 6px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ececec;
+}
+
+.sub {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #666;
+  margin: 22px 0 10px 0;
+}
+
+.sub:first-of-type {
+  margin-top: 0;
 }
 
 .section p {
@@ -81,49 +161,57 @@ a:hover {
 
 .section ul {
   margin: 0 0 12px 0;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 .section li {
   margin-bottom: 4px;
 }
 
-/* ---------- 论文条目 ---------- */
+/* ================= 论文条目 ================= */
 .paper {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .paper-title {
   font-weight: 700;
-  margin: 0 0 4px 0;
+  margin: 0 0 3px 0;
 }
 
 .paper-meta {
   margin: 0 0 6px 0;
-  color: #444;
+  font-size: 14.5px;
+  color: #555;
 }
 
 .abstract {
-  margin: 8px 0 0 0;
+  margin: 6px 0 0 0;
   font-size: 14.5px;
   line-height: 1.6;
   color: #555;
   text-align: justify;
 }
 
-/* ---------- 页脚 ---------- */
+/* ================= 页脚 ================= */
 .footer {
-  margin-top: 48px;
-  padding-top: 16px;
-  border-top: 1px solid #eee;
-  font-size: 13px;
-  color: #999;
-  text-align: center;
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 12.5px;
+  color: #aaa;
 }
 
-/* ---------- 手机端 ---------- */
-@media (max-width: 600px) {
-  .container { padding: 36px 18px 28px 18px; }
-  .name { font-size: 25px; }
-  .avatar { width: 120px; height: 120px; }
+/* ================= 手机端：变成单栏 ================= */
+@media (max-width: 760px) {
+  .layout {
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 20px 36px 20px;
+  }
+  .sidebar {
+    position: static;      /* 手机上取消吸顶 */
+    flex: none;
+    width: 100%;
+  }
+  .nav-inner { padding: 12px 20px; }
 }

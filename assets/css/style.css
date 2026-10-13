@@ -1,0 +1,129 @@
+/* ---------- 全局 ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 40px 24px;
+}
+
+/* ---------- 头部 ---------- */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 18px auto;
+  border: 1px solid #e2e2e2;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin: 0 0 10px 0;
+}
+
+.affiliation {
+  margin: 0 0 14px 0;
+  color: #444;
+}
+
+.contact {
+  margin: 2px 0;
+  color: #333;
+}
+
+/* ---------- 链接 ---------- */
+a {
+  color: #1a4b8c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 板块 ---------- */
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #111;
+  margin: 0 0 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.section p {
+  margin: 0 0 12px 0;
+}
+
+.section ul {
+  margin: 0 0 12px 0;
+  padding-left: 22px;
+}
+
+.section li {
+  margin-bottom: 4px;
+}
+
+/* ---------- 论文条目 ---------- */
+.paper {
+  margin-bottom: 18px;
+}
+
+.paper-title {
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.paper-meta {
+  margin: 0 0 6px 0;
+  color: #444;
+}
+
+.abstract {
+  margin: 8px 0 0 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* ---------- 页脚 ---------- */
+.footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}
+
+/* ---------- 手机端 ---------- */
+@media (max-width: 600px) {
+  .container { padding: 36px 18px 28px 18px; }
+  .name { font-size: 25px; }
+  .avatar { width: 120px; height: 120px; }
+}

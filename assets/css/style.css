@@ -146,7 +146,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  color: #666;
+  color: #222;
   margin: 22px 0 10px 0;
 }
 
@@ -173,7 +173,8 @@ a:hover {
 }
 
 .paper-title {
-  font-weight: 700;
+  font-weight: normal;
+  color:#1a4b8c
   margin: 0 0 3px 0;
 }
 

@@ -10,68 +10,61 @@
 <body>
 
   <!-- ============ 顶部导航栏 ============ -->
-  <a class="nav-brand" href="#interests">Wenjing Huang</a>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#interests">Wenjing Huang</a>
       <div class="nav-links">
         <a href="#research">Research</a>
-        <a href="#CV">CV</a>
+        <a href="#cv">CV</a>
       </div>
     </div>
   </nav>
 
   <div class="layout">
 
-    <!-- ============ 左侧栏：照片 / 姓名 / 机构 / 联系方式 ============ -->
+    <!-- ============ 左侧栏 ============ -->
     <aside class="sidebar">
-      <!-- 换成你的照片：assets/images/photo.jpg（正方形最佳） -->
       <img class="avatar" src="assets/images/photo.jpg" alt="Wenjing Huang">
 
       <h1 class="name">Wenjing Huang</h1>
 
       <p class="affiliation">The Chinese University of Hong Kong</p>
-    <p class="location">
-      
-  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-  Hong Kong SAR
-</p>
-     <li>
-  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-  <a href="mailto:wenjinghuang@link.cuhk.edu.hk">Email</a>
-</li>
-        <!-- 没有的链接直接删掉整行 -->
-        <!-- <li><a href="#">Google Scholar</a></li> -->
+
+      <p class="location">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Hong Kong SAR
+      </p>
+
+      <ul class="links">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <a href="mailto:wenjinghuang@link.cuhk.edu.hk">Email</a>
+        </li>
       </ul>
     </aside>
 
     <!-- ============ 右侧主内容 ============ -->
     <main class="content">
 
-      <!-- ---------- CV ---------- -->
-<section id="cv" class="section">
-  <h2>CV</h2>
-  <p>You can download my CV <a href="assets/pdf/CV.pdf">here</a>.</p>
-</section>
- <!-- ---------- wenjinghuang---------- -->
-      
+      <!-- ---------- Research Interests（点左上角名字）---------- -->
       <section id="interests" class="section">
         <h2>Research Interests</h2>
         <ul class="interests">
-    <li>International Trade</li>
-    <li>International Finance</li>
-    <li>Chinese Foreign Aid and Overseas Lending</li>
-    <li>RMB Internationalization</li>
-  </ul>
+          <li>International Trade</li>
+          <li>International Finance</li>
+          <li>Chinese Foreign Aid and Overseas Lending</li>
+          <li>RMB Internationalization</li>
+        </ul>
       </section>
 
-      <!-- ---------- Research ---------- -->
+      <!-- ---------- Research（点 Research）---------- -->
       <section id="research" class="section">
         <h2>Research</h2>
 
         <h3 class="sub">Job Market Paper</h3>
         <div class="paper">
           <p class="paper-title">
-            Wenjing Huang, Shu Lin and Haichun Ye. 2026. "Lending Your Way to Currency Dominance: Chinese Overseas Lending and RMB Invoicing." <a href="#">Paper</a> &middot; 
-          </p>
-            <!-- 换成真实链接；暂时没有就删掉这行 -->
+            Wenjing Huang, Shu Lin and Haichun Ye. 2026. "Lending Your Way to Currency Dominance: Chinese Overseas Lending and RMB Invoicing." <a href="#">Paper</a>
           </p>
         </div>
 
@@ -85,11 +78,19 @@
         <h3 class="sub">Selected Publication</h3>
         <div class="paper">
           <p class="paper-title">
-            Haichao Fan, Wenjing Huang, and Caiyun Wu. 2022. "Trade Liberalization and Quality Adjustment within Firms." <p class="paper-meta">
+            Haichao Fan, Wenjing Huang, and Caiyun Wu. 2022. "Trade Liberalization and Quality Adjustment within Firms."
+          </p>
+          <p class="paper-meta">
             <em>China Industrial Economics</em> (中国工业经济), 2022, 1: 93&ndash;112.
           </p>
-          </p>
         </div>
+      </section>
+
+      <!-- ---------- CV（点 CV）---------- -->
+      <section id="cv" class="section">
+        <h2>CV</h2>
+        <p>You can download my CV <a href="assets/pdf/CV.pdf">here</a>.</p>
+      </section>
 
       <footer class="footer">
         <p>Last updated: October 2026</p>
@@ -109,7 +110,8 @@
       showSection(this.getAttribute('href').slice(1));
     });
   });
-  showSection('interests');   // 默认显示 Research Interests
-</script>
+  showSection('interests');
+  </script>
+
 </body>
 </html>

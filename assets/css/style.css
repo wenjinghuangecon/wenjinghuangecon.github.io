@@ -87,7 +87,7 @@ a:hover {
   max-width: 160px;
   aspect-ratio: 1 / 1;    /* 强制正方形 */
   object-fit: cover;      /* 不变形，居中裁切 */
-  object-position:center 10%
+  object-position:center 5%;
   border-radius: 6px;     /* 圆形；想要方角改成 8px */
   display: block;
   border: 1px solid #ededed;

@@ -20,6 +20,14 @@ a:hover {
   text-decoration: underline;
 }
 
+.icon {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: #666;        /* 深灰色，跟截图一致 */
+  margin-right: 7px;  /* 图标与文字间距 */
+}
+
 /* ================= 顶部导航栏 ================= */
 .navbar {
   border-bottom: 1px solid #ececec;

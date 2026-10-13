@@ -98,5 +98,18 @@
     </main>
   </div>
 
+  <script>
+  function showSection(id) {
+    document.querySelectorAll('.content section').forEach(function (s) {
+      s.style.display = (s.id === id) ? 'block' : 'none';
+    });
+  }
+  document.querySelectorAll('.nav-links a, .nav-brand').forEach(function (a) {
+    a.addEventListener('click', function () {
+      showSection(this.getAttribute('href').slice(1));
+    });
+  });
+  showSection('interests');   // 默认显示 Research Interests
+</script>
 </body>
 </html>

@@ -47,9 +47,15 @@ a:hover {
 
 .nav-brand {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 0.2px;
+  color: #444;
 }
+.nav-brand:hover{
+  color:#1a4b8c;
+  text-decoration:none;
+}
+
 
 .nav-links {
   display: flex;
@@ -58,7 +64,7 @@ a:hover {
 
 .nav-links a {
   color: #444;
-  font-size: 14.5px;
+  font-size: 15px;
 }
 .nav-links a:hover {
   color: #1a4b8c;

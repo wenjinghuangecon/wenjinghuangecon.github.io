@@ -156,12 +156,12 @@ a:hover {
 
 /* Research 页面：标题和下面的 JOB MARKET PAPER 离远一点 */
 #research h2 {
-  margin-bottom: 32px;
+  margin-bottom: 32px !important;
 }
 
 /* Wenjing Huang 页面：标题和下面的列表离近一点 */
 #interests h2 {
-  margin-bottom: 2px;
+  margin-bottom: 2px !important;
 }
 
 .sub {

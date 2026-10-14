@@ -135,6 +135,13 @@
     });
   });
   showSection('interests');
+    document.querySelectorAll('.abstract-toggle').forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    var box = this.closest('.paper').querySelector('.abstract');
+    box.classList.toggle('open');
+  });
+});
   </script>
 
 </body>

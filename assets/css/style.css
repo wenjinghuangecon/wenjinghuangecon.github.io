@@ -47,9 +47,9 @@ a:hover {
 
 .nav-brand {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.2px;
-  color: #444;
+  color: #222;
 }
 .nav-brand:hover{
   color:#1a4b8c;
@@ -63,8 +63,13 @@ a:hover {
 }
 
 .nav-links a {
-  color: #444;
+  font-family:inherit;
+  color: #333;
   font-size: 15px;
+  font-weigh:500;
+  letter-spacing:0.2px;
+  text-decroation:none;
+  
 }
 .nav-links a:hover {
   color: #1a4b8c;

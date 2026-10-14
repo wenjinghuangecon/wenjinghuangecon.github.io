@@ -166,6 +166,8 @@ a:hover {
 
 .section p {
   margin: 0 0 10px 0;
+  text-align:justify;
+  hyphens:auto;
 }
 .intro {
   margin: 0 0 16px 0;      /* ← 三行之间的间距，想更大改 16px */

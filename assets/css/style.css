@@ -145,7 +145,7 @@ a:hover {
 }
 
 .section h2 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -160,7 +160,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: #222;
-  margin: 22px 0 10px 0;
+  margin: 36px 0 6px 0;
 }
 
 .sub:first-of-type {
@@ -197,7 +197,7 @@ a:hover {
 
 .paper-title {
   font-weight: normal;
-  color:#1a4b8c;
+  color: #222
   margin: 0 0 3px 0;
 }
 

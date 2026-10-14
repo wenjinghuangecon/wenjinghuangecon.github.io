@@ -45,32 +45,22 @@ a:hover {
   gap: 10px;
 }
 
-.nav-brand {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  color: #222;
-}
-.nav-brand:hover{
-  color:#1a4b8c;
-  text-decoration:none;
-}
-
-
 .nav-links {
   display: flex;
   gap: 20px;
 }
 
+.nav-brand,
 .nav-links a {
-  font-family:inherit;
-  color: #333;
+  font-family: inherit;
   font-size: 15px;
-  font-weigh:500;
-  letter-spacing:0.2px;
-  text-decroation:none;
-  
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.2px;
+  text-decoration: none;
 }
+
+.nav-brand:hover,
 .nav-links a:hover {
   color: #1a4b8c;
   text-decoration: none;
@@ -122,6 +112,7 @@ a:hover {
   font-size: 14.5px;
   color: #888;
 }
+.location { display: flex; align-items: center; }
 
 .links {
   list-style: none;
@@ -132,6 +123,7 @@ a:hover {
 .links li {
   margin-bottom: 5px;
 }
+.links li { display: flex; align-items: center; }
 
 .links a {
   font-size: 14.5px;
@@ -193,7 +185,7 @@ a:hover {
 
 .paper-title {
   font-weight: normal;
-  color:#1a4b8c
+  color:#1a4b8c;
   margin: 0 0 3px 0;
 }
 

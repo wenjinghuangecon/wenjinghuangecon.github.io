@@ -211,6 +211,56 @@ a:hover {
   margin: 0 0 3px 0;
 }
 
+/* ---------- 论文下方的胶囊按钮 ---------- */
+.paper-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 11px;
+  font-size: 13.5px;
+  color: #555;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.pill:hover {
+  background: #eee;
+  color: #1a4b8c;
+  text-decoration: none;
+}
+
+.pill .icon {
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  margin-right: 0;      /* 覆盖 .icon 默认的 7px，避免间距过大 */
+  color: #888;
+}
+
+/* ---------- 摘要（默认折叠） ---------- */
+.abstract {
+  display: none;
+  margin-top: 10px;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #555;
+  background: #fafafa;
+  border-left: 2px solid #e8e8e8;
+}
+
+.abstract.open {
+  display: block;
+}
+
 .paper-meta {
   margin: 0 0 6px 0;
   font-size: 14.5px;

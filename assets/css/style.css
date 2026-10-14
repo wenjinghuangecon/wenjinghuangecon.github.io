@@ -134,7 +134,8 @@ a:hover {
   flex: 1 1 auto;
   min-width: 0;           /* 防止长英文单词撑破布局 */
   text-align: justify;
-  hyphens: auto;
+  hyphens: manual;
+  word-spacing: -0.02em;
 }
 
 /* ================= 板块 ================= */

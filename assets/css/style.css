@@ -170,7 +170,7 @@ a:hover {
 .section p {
   margin: 0 0 10px 0;
   text-align:justify;
-  hyphens:auto;
+  hyphens:manual;
 }
 .intro {
   margin: 0 0 16px 0;      /* ← 三行之间的间距，想更大改 16px */
@@ -197,7 +197,7 @@ a:hover {
 
 .paper-title {
   font-weight: normal;
-  color: #222
+  color: #222;
   margin: 0 0 3px 0;
 }
 

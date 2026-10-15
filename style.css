@@ -1,0 +1,250 @@
+/* ================= 全局 ================= */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #1a4b8c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: #666;        /* 深灰色，跟截图一致 */
+  margin-right: 7px;  /* 图标与文字间距 */
+}
+
+/* ================= 顶部导航栏 ================= */
+.navbar {
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-brand,
+.nav-links a {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.nav-brand:hover,
+.nav-links a:hover {
+  color: #1a4b8c;
+  text-decoration: none;
+}
+
+/* ================= 两栏布局 ================= */
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 32px 48px 32px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+/* ---------- 左栏（固定宽度） ---------- */
+.sidebar {
+  flex: 0 0 260px;        /* 左栏宽度，想更宽改这个 */
+  position: sticky;       /* 滚动时左栏吸顶不动 */
+  top: 24px;
+}
+
+.avatar {
+  width: 100%;            /* 跟随左栏宽度 */
+  max-width: 160px;
+  aspect-ratio: 1 / 1;    /* 强制正方形 */
+  object-fit: cover;      /* 不变形，居中裁切 */
+  object-position:center 5%;
+  border-radius: 6px;     /* 圆形；想要方角改成 8px */
+  display: block;
+  border: 1px solid #ededed;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.2px;
+}
+
+.affiliation {
+  margin: 0 0 6px;
+  font-size: 14.5px;
+  color: #333;
+}
+
+.location {
+  margin: 0 0 6px 0;
+  font-size: 14.5px;
+  color: #888;
+}
+.location { display: flex; align-items: center; }
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+.links li { display: flex; align-items: center; }
+
+.links a {
+  font-size: 14.5px;
+}
+
+/* ---------- 右栏（占剩余宽度） ---------- */
+.content {
+  flex: 1 1 auto;
+  min-width: 0;           /* 防止长英文单词撑破布局 */
+  text-align: justify;
+  hyphens: manual;
+  word-spacing: -0.02em;
+}
+
+/* ================= 板块 ================= */
+.section {
+  margin-bottom: 24px;
+  scroll-margin-top: 24px;
+}
+
+.section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111;
+  margin: 20px 0 2px 0;
+  padding-bottom: 2px;
+}
+
+/* Research 页面：标题和下面的 JOB MARKET PAPER 离远一点 */
+#research h2 {
+  margin-bottom: 32px !important;
+}
+
+/* Wenjing Huang 页面：标题和下面的列表离近一点 */
+#interests h2 {
+  margin-bottom: 2px !important;
+}
+
+.sub {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #222;
+  margin: 36px 0 6px 0;
+}
+
+.sub:first-of-type {
+  margin-top: 0;
+}
+
+.section p {
+  margin: 0 0 10px 0;
+  text-align:justify;
+  hyphens:manual;
+}
+.intro {
+  margin: 0 0 16px 0;      /* ← 三行之间的间距，想更大改 16px */
+}
+
+.intro-email a {
+  font-weight: 700;        /* ← Email 加粗 */
+  font-size: 17px;         /* ← 顺便比正文大一号 */
+}
+
+.section ul {
+  margin: 0 0 12px 0;
+  padding-left: 20px;
+}
+
+.section li {
+  margin-bottom: 4px;
+}
+
+/* ================= 论文条目 ================= */
+.paper {
+  margin-bottom: 16px;
+}
+
+.paper-title {
+  font-weight: normal;
+  color: #222;
+  margin: 0 0 3px 0;
+}
+
+.paper-meta {
+  margin: 0 0 6px 0;
+  font-size: 14.5px;
+  color: #555;
+}
+
+.abstract {
+  margin: 6px 0 0 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* ================= 页脚 ================= */
+.footer {
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 12.5px;
+  color: #aaa;
+}
+
+/* ================= 手机端：变成单栏 ================= */
+@media (max-width: 760px) {
+  .layout {
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 20px 36px 20px;
+  }
+  .sidebar {
+    position: static;      /* 手机上取消吸顶 */
+    flex: none;
+    width: 100%;
+  }
+  .nav-inner { padding: 12px 20px; }
+}
